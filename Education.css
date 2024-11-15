@@ -1,0 +1,167 @@
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+/* Global Navbar Styling */
+nav {
+    background-color: #E9F7FA; /* Light blue background for consistency */
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    color: #FF6347; /* Tomato color for the brand */
+    margin-left: 20px;
+    transition: font-size 0.3s ease; /* Smooth transition for font resizing */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* Space between the navbar links */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #C5FFF8; /* Light turquoise background */
+    color: #E74C3C; /* Red text for links */
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase; /* Uppercase for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #FF6347; /* Hover effect: tomato background */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+img.d-block {
+    border-radius: 50%;
+    border: 8px solid #FF6347;
+}
+
+.lead {
+    line-height: 1.8;
+    color: #555555;
+}
+
+h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.feature h5 {
+    font-size: 1.2rem;
+    color: #6C63FF;
+}
+
+.feature h6 {
+    font-size: 1rem;
+    color: #FF6347;
+}
+
+.feature p {
+    color: #555555;
+}
+
+#featured-3 {
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    border-top: 2px solid #e3e3e3;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+
+    #featured-3 {
+        margin-top: 80px;
+    }
+
+    .lead {
+        font-size: 0.9rem;
+    }
+
+    img.d-block {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+
+    footer img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Navbar responsive styles */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+}

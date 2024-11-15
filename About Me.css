@@ -1,0 +1,197 @@
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+/* Global Navbar Styling */
+nav {
+    background-color: #E9F7FA; /* Light blue background for consistency */
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    color: #FF6347; /* Tomato color for the brand */
+    margin-left: 20px;
+    transition: font-size 0.3s ease; /* Smooth transition for font resizing */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* Space between the navbar links */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #C5FFF8; /* Light turquoise background */
+    color: #E74C3C; /* Red text for links */
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase; /* Uppercase for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #FF6347; /* Hover effect: tomato background */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: calc(1.8rem + 0.5vw);
+    text-align: center;
+}
+
+#para {
+    font-size: 1rem;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+#intro_img {
+    width: 60px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.row {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+#images {
+    text-align: center;
+}
+
+.d-block {
+    border-radius: 10px;
+    border: 5px solid #ccc;
+}
+
+.col-xxl-8 {
+    margin-top: 50px;
+}
+
+.display-5 {
+    font-size: calc(2rem + 1vw);
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+#top-margin-1 {
+    margin-top: 80px;
+}
+
+#footer-1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#footer-1 img {
+    width: 30px;
+    margin: 5px;
+}
+
+#footer-1 p {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 992px) {
+    #intro_img {
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #para {
+        font-size: 0.9rem;
+    }
+
+    .display-5 {
+        font-size: 1.8rem;
+    }
+
+    #footer-1 img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    #images {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #intro_img {
+        width: 40px;
+    }
+
+    #para {
+        font-size: 0.85rem;
+    }
+
+    #footer-1 {
+        margin-top: 20px;
+    }
+}
+
+
+/* Navbar responsive styles */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+}

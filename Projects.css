@@ -1,0 +1,232 @@
+/* General Body Style */
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+/* Navbar Styles */
+/* Global Navbar Styling */
+nav {
+    background-color: #E9F7FA; /* Light blue background for consistency */
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    color: #FF6347; /* Tomato color for the brand */
+    margin-left: 20px;
+    transition: font-size 0.3s ease; /* Smooth transition for font resizing */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* Space between the navbar links */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #C5FFF8; /* Light turquoise background */
+    color: #E74C3C; /* Red text for links */
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase; /* Uppercase for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #FF6347; /* Hover effect: tomato background */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Hero Section */
+.container.col-xxl-8 {
+    padding: 50px 0;
+}
+
+.display-5 {
+    font-size: 60px;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 20px;
+    color: #8b4513;
+}
+
+/* Project Section */
+.row {
+    margin-bottom: 50px;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.project-card .col-lg-7 {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .col-lg-7 h1 {
+    font-size: 40px;
+    color: #333333;
+}
+
+.project-card .col-lg-7 p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.project-card .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #888888;
+}
+
+/* Social Media Icon Style */
+#twitter, #instagram_svg, #github_svg, #linkin_svg, #gmail_svg {
+    width: 40px;
+    height: 40px;
+}
+
+#twitter:hover, #instagram_svg:hover, #github_svg:hover, #linkin_svg:hover, #gmail_svg:hover {
+    filter: brightness(0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .lead {
+        font-size: 16px;
+    }
+
+    .display-5 {
+        font-size: 40px;
+    }
+
+    .col-lg-7 p {
+        font-size: 14px;
+    }
+
+    .col-lg-4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container.col-xxl-8 {
+        padding: 30px 15px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card .col-lg-7 {
+        padding: 15px;
+    }
+
+    .project-card .col-lg-4 {
+        margin-top: 15px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 450px) {
+   
+    .display-5 {
+        font-size: 32px;
+    }
+
+    .lead {
+        font-size: 14px;
+    }
+
+    .col-lg-7 p {
+        font-size: 13px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* Navbar responsive styles */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+}

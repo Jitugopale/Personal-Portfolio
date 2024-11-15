@@ -1,0 +1,196 @@
+/* General body improvements */
+
+body {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEF5FF;
+}
+
+/* Navbar improvements */
+/* Global Navbar Styling */
+nav {
+    background-color: #E9F7FA; /* Light blue background for consistency */
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-family: 'Brush Script MT', cursive;
+    color: #FF6347; /* Tomato color for the brand */
+    margin-left: 20px;
+    transition: font-size 0.3s ease; /* Smooth transition for font resizing */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 15px; /* Space between the navbar links */
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #C5FFF8; /* Light turquoise background */
+    color: #E74C3C; /* Red text for links */
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase; /* Uppercase for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: #FF6347; /* Hover effect: tomato background */
+    color: #fff; /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+/* Hero section responsiveness */
+#para {
+    font-size: 1rem;
+    margin: 20px;
+    text-align: justify;
+}
+
+/* Image Styling */
+#intro_img {
+    width: 60px; /* Larger size for better visual impact */
+    margin: 10px;
+    border-radius: 50%; /* Maintain circular appearance */
+    border: 3px solid #C5FFF8; /* Subtle border for contrast */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Add smooth effects */
+}
+
+#intro_img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    border-color: #FFB3B3; /* Change border color on hover */
+}
+
+/* Align images attractively */
+#images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive grids */
+.row {
+    height: auto; /* Allow natural height */
+}
+
+/* Footer adjustments */
+#footer-1 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#footer-1 img {
+    width: 30px;
+    margin: 5px;
+}
+
+/* Strength, Weakness, and Goals sections */
+.col-xxl-8 {
+    margin-top: 50px;
+}
+
+h1.display-5 {
+    font-size: calc(2rem + 1vw); /* Responsive scaling */
+    text-align: center;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+/* Media queries for better breakpoints */
+@media (max-width: 992px) {
+    .col-xxl-8 {
+        margin-top: 100px;
+    }
+
+    #intro_img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #images {
+        margin-top: 50px;
+        flex-wrap: wrap; /* Stack images on smaller screens */
+        gap: 10px;
+    }
+
+    .col-lg-6 {
+        text-align: center; /* Center align content */
+    }
+
+    #footer-1 img {
+        width: 25px;
+    }
+
+    #intro_img {
+        width: 45px; /* Smaller size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-xxl-8 {
+        margin-top: 150px;
+    }
+
+    #para {
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+
+    #intro_img {
+        width: 40px; /* Further reduced size for very small screens */
+    }
+
+}
+
+/* Navbar responsive styles */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .navbar-nav {
+        justify-content: center;
+    }
+}
